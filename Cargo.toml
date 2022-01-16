@@ -1,0 +1,19 @@
+[package]
+name = "split-tunnel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1"
+clap = { version = "3", features = ["derive"] }
+futures = "0.3"
+hyper = {version = "0.14", features = ["client", "server", "tcp", "stream", "http1"]}
+hyper-tls = "0.5"
+pnet_macros = "0.29"
+pnet_macros_support = "0.29"
+tokio = { version = "1",  features = ["full"] }
+thiserror = "1"
+uuid = { version = "0.8", features = ["v4"] }
+url = "2"
